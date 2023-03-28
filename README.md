@@ -99,7 +99,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/MAleemH/Vet-Clinic-Database.git
+  git clone https://github.com/The-Normal-One1/Vet-clinic-database.git
 ```
 
 ### Usage

@@ -64,7 +64,7 @@ SELECT * FROM animals
 ROLLBACK TO SP1;
 COMMIT;
 
--- Answer for the quary
+-- Answer for the quarys
 
 SELECT * FROM animals
 

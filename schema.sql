@@ -9,6 +9,3 @@ neutered BOOLEAN NOT NULL,
 weight_kg DECIMAL NOT NULL,
 PRIMARY KEY(id)
 );
-
-ALTER TABLE animals
-ADD species TEXT;

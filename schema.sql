@@ -58,3 +58,23 @@ ALTER TABLE animals
 ADD FOREIGN KEY (owner_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
+
+-- EXTRA INSERT IN OWNERS TABLE
+
+INSERT INTO owners (full_name, age) VALUES
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob',45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+SELECT * FROM owners
+
+-- INSERT DATE FOR SPECIES TABLE
+
+SELECT * FROM species
+
+INSERT INTO species(name) VALUES
+('Pokemon'),
+('Digimon');

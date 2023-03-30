@@ -56,3 +56,14 @@ ALTER TABLE animals
 ADD FOREIGN KEY (owner_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
+
+-- Create a table named vets 
+
+CREATE TABLE vets(
+id INT GENERATED ALWAYS AS IDENTITY,
+	name VARCHAR(100) NOT NULL,
+	age INT NOT NULL,
+	date_of_graduation DATE NOT NULL,
+	PRIMARY KEY(id)
+	
+);

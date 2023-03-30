@@ -67,3 +67,45 @@ id INT GENERATED ALWAYS AS IDENTITY,
 	PRIMARY KEY(id)
 	
 );
+
+--  Create a "join table" called specializations
+
+CREATE TABLE specializations(
+species_id INT,
+	vets_id INT
+);
+
+SELECT * FROM specializations
+
+ALTER TABLE specializations
+ADD FOREIGN KEY (species_id)
+REFERENCES species(id)
+ON DELETE CASCADE;
+
+ALTER TABLE specializations
+ADD FOREIGN KEY (vets_id)
+REFERENCES vets(id)
+ON DELETE CASCADE;
+
+-- Create a "join table" called visits
+
+CREATE TABLE visits(
+animals_id INT,
+	vets_id INT
+);
+
+SELECT * FROM visits
+SELECT * FROM animals
+
+ALTER TABLE visits
+ADD FOREIGN KEY (animals_id)
+REFERENCES animals(id)
+ON DELETE CASCADE;
+
+ALTER TABLE visits
+ADD FOREIGN KEY (vets_id)
+REFERENCES vets(id)
+ON DELETE CASCADE;
+
+ALTER TABLE visits
+ADD date_of_visits DATE;

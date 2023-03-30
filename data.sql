@@ -16,6 +16,26 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) V
 ('Blossom','1998-10-13','3','True','17.00'),
 ('Ditto','2022-05-14','4','True','22.00');
 
+-- EXTRA INSERT IN OWNERS TABLE
+
+INSERT INTO owners (full_name, age) VALUES
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob',45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+SELECT * FROM owners
+
+-- INSERT DATE FOR SPECIES TABLE
+
+SELECT * FROM species
+
+INSERT INTO species(name) VALUES
+('Pokemon'),
+('Digimon');
+
 
 --  To modify the animals with species_id
 

@@ -15,3 +15,60 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) V
 ('Boarmon','2005-06-07','7','True','20.40'),
 ('Blossom','1998-10-13','3','True','17.00'),
 ('Ditto','2022-05-14','4','True','22.00');
+
+
+--  To modify the animals with species_id
+
+BEGIN;
+
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon%';
+
+SELECT * FROM animals
+
+UPDATE animals 
+SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+WHERE name NOT LIKE '%mon%'; 
+
+SELECT * FROM animals
+
+COMMIT;
+
+--  Modify animals table with owner_id
+
+BEGIN;
+
+SELECT * FROM animals
+
+SELECT * FROM owners
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon';
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name = 'Gabumon' OR name = 'Pikachu';
+
+SELECT * FROM owners
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name = 'Devimon' OR name = 'Plantmon';
+
+SELECT * FROM animals
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+
+SELECT * FROM owners
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name = 'Angemon' OR name = 'Boarmon';
+
+SELECT * FROM animals
+
+COMMIT;

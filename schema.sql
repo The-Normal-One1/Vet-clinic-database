@@ -94,9 +94,6 @@ animals_id INT,
 	vets_id INT
 );
 
-SELECT * FROM visits
-SELECT * FROM animals
-
 ALTER TABLE visits
 ADD FOREIGN KEY (animals_id)
 REFERENCES animals(id)

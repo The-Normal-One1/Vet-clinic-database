@@ -105,10 +105,6 @@ SELECT * FROM vets
 
 -- Insert data for specialties
 
-SELECT * FROM specializations
-
-SELECT * FROM species
-
 INSERT INTO specializations VALUES
 (1, 1),
 (2, 3),

@@ -106,3 +106,7 @@ ON DELETE CASCADE;
 
 ALTER TABLE visits
 ADD date_of_visits DATE;
+
+
+-- Add an email column to our owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);

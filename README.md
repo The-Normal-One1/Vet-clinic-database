@@ -65,6 +65,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
+## Schema Diagram
+
+![Schema Diagram](./vet-clinic%20diagram.pngvet-clinic%20diagram.png)
+
 <!-- <details>
 <summary>Database</summary>
   <ul>

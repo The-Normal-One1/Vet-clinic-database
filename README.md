@@ -65,6 +65,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
+## Schema Diagram
+
+![Schema Diagram](./vet-clinic%20diagram.png)
+
 <!-- <details>
 <summary>Database</summary>
   <ul>
@@ -117,6 +121,12 @@ To run the project, you can copy queries from the given files and use them into 
 - GitHub: [@The-Normal-One1](https://github.com/The-Normal-One1)
 - Twitter: [@DemsewErmiyas](https://twitter.com/DemsewErmiyas)
 - LinkedIn: [@Ermiyas Demsew](https://www.linkedin.com/in/ermiyas-demsew-616b1b19a/)
+
+👤 **Ezekiel Udiomuno**
+
+- GitHub: [@Ezzywealth](https://github.com/Ezzywealth)
+- Twitter: [@EzzyWealth](https://twitter.com/EzzyWealth)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ezekiel-udiomnuno)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
